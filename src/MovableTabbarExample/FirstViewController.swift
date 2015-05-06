@@ -20,7 +20,7 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     {
         super.viewDidLoad()
         self.title = "Test"
-        self.movableFooterController = MovableFooterController(footerView: self.tabBarController!.tabBar ,scrollView: self.tableView,containerView: self.view);
+        self.movableFooterController = MovableFooterController(footerView: self.tabBarController!.tabBar ,scrollView: self.tableView,containerView: self.view)
     }
     
     override func viewWillAppear(animated: Bool)
@@ -31,7 +31,7 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     override func viewWillDisappear(animated: Bool)
     {
         super.viewWillDisappear(animated)
-        self.movableFooterController?.setContainerViewSizeForNonMovableFooter();
+        self.movableFooterController?.setContainerViewSizeForNonMovableFooter()
         
     }
 
